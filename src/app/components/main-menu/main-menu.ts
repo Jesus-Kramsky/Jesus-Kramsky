@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './main-menu.html',
   styleUrl: './main-menu.scss',
 })
-export class MainMenu {}
+export class MainMenu {
+  selectedComponent: string = 'home';
+}
