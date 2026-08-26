@@ -1,5 +1,3 @@
-<div class="flex items-center justify-center h-screen">
-  @if (selectedComponent === 'home') {
-    <p>Main menu works</p>
-  } @else if (selectedComponent === '') {}
-</div>
+@if (selectedComponent === 'home') {
+  <app-home></app-home>
+} @else if (selectedComponent === '') {}
