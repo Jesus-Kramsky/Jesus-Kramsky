@@ -1,3 +1,10 @@
-<div class="flex items-center justify-center h-screen">
-  <img [ngSrc]="pixelArt" width="150" height="150" alt="Pixel art character" priority />
+<div class="flex flex-col gap-14 items-center justify-center h-screen">
+  <h1 class="title">Jesús Antonio Kramsky Diaz</h1>
+  <div id="PixelArt" class="flex flex-row items-center justify-center">
+    <img [ngSrc]="pixelArt" width="200" height="200" alt="Pixel art character" priority />
+  </div>
+  <div id="options" class="flex gap-14 flex-row items-center justify-center">
+    <button matButton class="optionButton">Información</button>
+    <button matButton class="optionButton">Idioma</button>
+  </div>
 </div>

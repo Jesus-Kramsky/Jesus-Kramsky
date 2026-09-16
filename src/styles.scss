@@ -17,6 +17,11 @@ html {
       density: 0,
     )
   );
+  @include mat.button-overrides(
+    (
+      text-label-text-color: var(--mat-sys-on-surface),
+    )
+  );
 }
 
 body {
