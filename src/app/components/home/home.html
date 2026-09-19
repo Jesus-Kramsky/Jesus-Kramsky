@@ -4,7 +4,9 @@
     <img [ngSrc]="pixelArt" width="200" height="200" alt="Pixel art character" priority />
   </div>
   <div id="options" class="flex gap-14 flex-row items-center justify-center">
-    <button matButton class="optionButton">Información</button>
+    <button matButton class="optionButton" (click)="selectComponent('information')">
+      Información
+    </button>
     <button matButton class="optionButton">Idioma</button>
   </div>
 </div>

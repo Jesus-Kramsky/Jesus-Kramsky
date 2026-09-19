@@ -1,3 +1,5 @@
 @if (selectedComponent === 'home') {
-  <app-home></app-home>
-} @else if (selectedComponent === '') {}
+  <app-home (componentSelected)="selectComponent($event)"></app-home>
+} @else if (selectedComponent === 'information') {
+  <app-information></app-information>
+}

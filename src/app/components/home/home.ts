@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 
@@ -7,8 +7,13 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [NgOptimizedImage, MatButtonModule],
   templateUrl: './home.html',
   styleUrl: './home.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Home {
   protected readonly pixelArt = '/assets/New_Piskel.gif';
+
+  @Output() componentSelected = new EventEmitter<string>();
+
+  selectComponent(component: string) {
+    this.componentSelected.emit(component);
+  }
 }
