@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-information',
@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './information.html',
   styleUrl: './information.scss',
 })
-export class Information {}
+export class Information {
+  @Output() componentSelected = new EventEmitter<string>();
+
+  selectComponent(component: string) {
+    this.componentSelected.emit(component);
+  }
+}
