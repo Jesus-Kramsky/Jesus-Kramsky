@@ -30,16 +30,58 @@ export class Information {
       id: 'about',
       label: 'Sobre mí',
       options: [
-        { id: 'intro', label: 'Introducción', detail: 'Soy...' },
-        { id: 'mission', label: 'Misión', detail: 'Mi objetivo...' },
+        {
+          id: 'desc',
+          label: 'Descripción',
+          detail:
+            'Desarrollador de software entusiasta con dos años de experiencia usando tecnologías modernas de frontend y backend. Me apasiona crear aplicaciones web eficientes y escalables, y siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.',
+        },
+        {
+          id: 'mission',
+          label: 'Misión',
+          detail:
+            'Aprender cosas nuevas constantemente tanto profesional cómo personalmente, para ser una mejor versión de mí mismo y poder ayudar a otros a crecer.',
+        },
+        {
+          id: 'intereses',
+          label: 'Intereses',
+          detail:
+            'Soy un apasionado de la tecnología y la programación, me gusta aprender nuevas tecnologías y aplicarlas en proyectos personales. También disfruto de los videojuegos, el deporte y de muchas cosas más, siempre estoy buscando nuevas experiencias y formas de crecer como persona.',
+        },
       ],
     },
     {
       id: 'experience',
       label: 'Experiencia',
       options: [
-        { id: 'frontend', label: 'Frontend', detail: 'He trabajado con Angular...' },
-        { id: 'backend', label: 'Backend', detail: 'También he hecho APIs...' },
+        {
+          id: 'ecosur',
+          label: 'Ecosur',
+          detail:
+            'Trabajé cómo desarrollador becario principalmente enfocado en el backend trabajando con las tecnologías de .NET desarrollando APIs para automatizar procesos educativos. Además, utilicé react para graficar datos institucionales.',
+        },
+        {
+          id: 'alset',
+          label: 'Alset',
+          detail:
+            'Me desempeñé cómo un desarrollador full-stack desarrollando y haciendo mantenimiento de aplicaciones web utilizando .NET y NestJS para el backend y angular para frontend.',
+        },
+        {
+          id: 'legalbit',
+          label: 'Legalbit',
+          detail: 'Tuve un puesto cómo desarrollador backend utilizando tecnologías de node.js',
+        },
+        {
+          id: 'cajapixeles',
+          label: 'Caja de Pixeles',
+          detail:
+            'Apoyé en el desarrollo y migración de un sistema de gestión empresarial haciendo uso de Angular para la implementación de interfaces y conectarlas con la API.',
+        },
+        {
+          id: 'personal',
+          label: 'Proyectos personales',
+          detail: 'He trabajado con Angular y React...',
+        },
       ],
     },
     {
@@ -67,10 +109,18 @@ export class Information {
       id: 'contact',
       label: 'Contacto',
       options: [
-        { id: 'email', label: 'Email', detail: 'miemail@ejemplo.com' },
-        { id: 'phone', label: 'Teléfono', detail: '+34 123 456 789' },
-        { id: 'location', label: 'Ubicación', detail: 'Madrid, España' },
-        { id: 'linkedin', label: 'LinkedIn', detail: 'linkedin.com/in/antonio-kramsky' },
+        {
+          id: 'email',
+          label: 'Email',
+          detail:
+            'jesus.kramsky@gmail.com\nSi tienes alguna pregunta o proyecto con el que te gustaría colaborar, no dudes en contactarme por medio de mi correo.',
+        },
+        {
+          id: 'linkedin',
+          label: 'LinkedIn',
+          detail:
+            'https://www.linkedin.com/in/jesus-kramsky-27b541317/\nPuedes ver y seguir mi perfil en Linkedin para conocer más sobre mi experiencia y habilidades por medio de mis publicaciones.',
+        },
       ],
     },
   ];
