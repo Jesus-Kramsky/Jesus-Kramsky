@@ -50,8 +50,8 @@
       "stack": {
         "label": "Stack",
         "options": {
-          "frontend": { "label": "Frontend", "detail": "Angular, React..." },
-          "backend": { "label": "Backend", "detail": "Node.js, Express..." }
+          "frontend": { "label": "Frontend", "detail": "Angular \n\n React" },
+          "backend": { "label": "Backend", "detail": ".NET \n\n Node.js \n\n Express \n\n NestJS" }
         }
       },
       "skills": {
