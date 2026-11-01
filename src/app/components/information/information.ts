@@ -77,11 +77,11 @@ export class Information {
           detail:
             'Apoyé en el desarrollo y migración de un sistema de gestión empresarial haciendo uso de Angular para la implementación de interfaces y conectarlas con la API.',
         },
-        {
-          id: 'personal',
-          label: 'Proyectos personales',
-          detail: 'He trabajado con Angular y React...',
-        },
+        // {
+        //   id: 'personal',
+        //   label: 'Proyectos personales',
+        //   detail: 'He trabajado con Angular y React...',
+        // },
       ],
     },
     {
@@ -96,13 +96,24 @@ export class Information {
       id: 'aptitudes',
       label: 'Aptitudes',
       options: [
-        { id: 'communication', label: 'Comunicación', detail: 'Me comunico efectivamente...' },
+        {
+          id: 'communication',
+          label: 'Comunicación',
+          detail:
+            'Disfruto de tener una comunicación clara y eficiente con los clientes y compañeros de trabajo.',
+        },
         {
           id: 'problemSolving',
           label: 'Resolución de problemas',
-          detail: 'Me gusta resolver problemas...',
+          detail:
+            'Me gusta enfrentar desafíos y encontrar soluciones a los problemas que surgen en el desarrollo de software.',
         },
-        { id: 'teamwork', label: 'Trabajo en equipo', detail: 'Disfruto trabajar en equipo...' },
+        {
+          id: 'teamwork',
+          label: 'Trabajo en equipo',
+          detail:
+            'Disfruto de estar en un equipo en el que se fomente la colaboración y el respeto mutuo para disfrutar aún más del desarrollo de sistemas y tener un ambiente de trabajo positivo.',
+        },
       ],
     },
     {
