@@ -1,0 +1,89 @@
+{
+  "home": {
+    "information": "Information",
+    "languageToggle": "Español",
+    "imageAlt": "Pixel art character"
+  },
+  "information": {
+    "portraitAlt": "Antonio Kramsky",
+    "backToMenu": "Back to menu",
+    "selectOption": "Select an option",
+    "sections": {
+      "about": {
+        "label": "About me",
+        "options": {
+          "description": {
+            "label": "Description",
+            "detail": "I am an enthusiastic software developer with two years of experience working with modern frontend and backend technologies. I am passionate about building efficient, scalable web applications, and I am always looking to learn new technologies and improve my skills."
+          },
+          "mission": {
+            "label": "Mission",
+            "detail": "To keep learning, both professionally and personally, so I can become a better version of myself and help others grow."
+          },
+          "interests": {
+            "label": "Interests",
+            "detail": "I am passionate about technology and programming. I enjoy learning about new technologies and applying them to personal projects. I also enjoy video games, sports, and many other things. I am always looking for new experiences and ways to grow as a person."
+          }
+        }
+      },
+      "experience": {
+        "label": "Experience",
+        "options": {
+          "ecosur": {
+            "label": "Ecosur",
+            "detail": "I worked as a software development intern, focusing mainly on backend development. I used .NET to build APIs that automated educational processes, and React to visualize institutional data."
+          },
+          "alset": {
+            "label": "Alset",
+            "detail": "I worked as a full-stack developer, building and maintaining web applications with .NET and NestJS on the backend and Angular on the frontend."
+          },
+          "legalbit": {
+            "label": "Legalbit",
+            "detail": "I worked as a backend developer using Node.js technologies."
+          },
+          "cajapixeles": {
+            "label": "Caja de Pixeles",
+            "detail": "I contributed to the development and migration of an enterprise management system, using Angular to build interfaces and connect them to the API."
+          }
+        }
+      },
+      "stack": {
+        "label": "Tech stack",
+        "options": {
+          "frontend": { "label": "Frontend", "detail": "Angular, React..." },
+          "backend": { "label": "Backend", "detail": "Node.js, Express..." }
+        }
+      },
+      "skills": {
+        "label": "Skills",
+        "options": {
+          "communication": {
+            "label": "Communication",
+            "detail": "I value clear and effective communication with clients and coworkers."
+          },
+          "problemSolving": {
+            "label": "Problem-solving",
+            "detail": "I enjoy tackling challenges and finding solutions to problems that arise during software development."
+          },
+          "teamwork": {
+            "label": "Teamwork",
+            "detail": "I enjoy being part of a team that encourages collaboration and mutual respect. It makes building software more rewarding and helps create a positive work environment."
+          }
+        }
+      },
+      "contact": {
+        "label": "Contact",
+        "options": {
+          "email": {
+            "label": "Email",
+            "detail": "jesus.kramsky@gmail.com\nIf you have any questions or would like to collaborate on a project, feel free to reach out by email."
+          },
+          "linkedin": {
+            "label": "LinkedIn",
+            "detail": "https://www.linkedin.com/in/jesus-kramsky-27b541317/\nVisit and follow my LinkedIn profile to learn more about my experience and skills through my posts."
+          }
+        }
+      }
+    }
+  }
+}

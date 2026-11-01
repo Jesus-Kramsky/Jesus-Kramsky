@@ -1,0 +1,61 @@
+<div class="flex flex-col p-4 menu">
+  <div class="flex flex-row border border-gray-300 overflow-hidden bg-[#112651]">
+    <div class="flex flex-1 items-center justify-center border-r border-gray-300 p-4">
+      <img
+        class="block"
+        [src]="pixelArt"
+        width="200"
+        height="200"
+        [alt]="'information.portraitAlt' | translate"
+      />
+    </div>
+    <div class="flex flex-row flex-4 p-4">
+      <div class="flex-1">
+        <ul class="list-disc list-inside">
+          @for (section of sections.slice(0, 3); track section.id) {
+            <li
+              class="cursor-pointer"
+              [class.font-bold]="selectedSection === section.id"
+              (click)="selectSection(section.id)"
+            >
+              {{ section.label | translate }}
+            </li>
+          }
+        </ul>
+      </div>
+      <div class="flex-1">
+        <ul class="list-disc list-inside">
+          @for (section of sections.slice(3); track section.id) {
+            <li
+              class="cursor-pointer"
+              [class.font-bold]="selectedSection === section.id"
+              (click)="selectSection(section.id)"
+            >
+              {{ section.label | translate }}
+            </li>
+          }
+          <li (click)="selectComponent('home')" class="cursor-pointer">
+            {{ 'information.backToMenu' | translate }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-row border border-gray-300 overflow-hidden bg-[#112651]">
+    <div class="flex-1 border-r border-gray-300 p-4">
+      <ul class="list-disc list-inside">
+        @for (option of currentOptions(); track option.id) {
+          <li
+            class="cursor-pointer"
+            [class.font-bold]="selectedOption === option.id"
+            (click)="selectOption(option.id)"
+          >
+            {{ option.label | translate }}
+          </li>
+        }
+      </ul>
+    </div>
+    <div class="flex-4 p-4 whitespace-pre-line">{{ currentDetail() | translate }}</div>
+  </div>
+</div>
