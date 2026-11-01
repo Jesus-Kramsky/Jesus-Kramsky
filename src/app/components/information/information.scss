@@ -23,17 +23,21 @@ li {
   }
 
   .options-list {
-    flex: 2;
+    flex: 3;
+  }
+
+  .column-menu {
+    flex: 0;
   }
 
   .image-section {
-    width: 130px;
-    height: 250px;
-    flex: auto;
+    width: 100px;
+    height: 260px;
+    flex: 3;
   }
 
   .options-detail {
-    flex: 3;
+    flex: 4;
   }
 }
 
@@ -50,6 +54,10 @@ li {
 @media (max-width: 480px) {
   .menu {
     font-size: 9px;
+  }
+
+  .column-menu {
+    flex: 0;
   }
 
   li {

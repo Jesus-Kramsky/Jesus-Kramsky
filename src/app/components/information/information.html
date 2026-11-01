@@ -3,8 +3,8 @@
     <div class="image-section flex flex-1 items-center justify-center border-r border-gray-300 p-4">
       <img class="block image" [src]="pixelArt" [alt]="'information.portraitAlt' | translate" />
     </div>
-    <div class="section-menu flex flex-row flex-4 p-4">
-      <div class="flex-1">
+    <div class="section-menu flex flex-row flex-4 border-r border-gray-300 p-4">
+      <div class="flex-1 column-menu">
         <ul class="list-disc list-inside">
           @for (section of sections.slice(0, 3); track section.id) {
             <li
