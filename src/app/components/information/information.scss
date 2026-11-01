@@ -5,6 +5,28 @@ li {
 
 .menu {
   font-family: 'Press Start 2P', system-ui;
-  font-weight: 0;
-  font-size: medium;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  //overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    font-size: 5px;
+  }
+
+  li {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    font-size: 5px;
+  }
+
+  li {
+    margin-top: 12px;
+  }
 }

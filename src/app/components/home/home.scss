@@ -1,12 +1,41 @@
 .title {
   font-family: 'Press Start 2P', system-ui;
   font-weight: 400;
-  font-size: xx-large;
+  font-size: 28px;
+  line-height: 1.6;
+  max-width: calc(100vw - 2rem);
+  text-align: center;
 }
 
 .optionButton {
   font-family: 'Press Start 2P', system-ui;
   font-weight: 400;
-  font-size: medium;
+  font-size: 14px;
+  line-height: 1.6;
   //color: var(--mat-sys-on-surface) !important;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .optionButton {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 12px;
+  }
+
+  .optionButton {
+    font-size: 9px;
+  }
+
+  #options {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
 }
