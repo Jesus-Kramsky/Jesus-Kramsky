@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 type InfoOption = {
   id: string;
@@ -14,7 +15,7 @@ type InfoSection = {
 
 @Component({
   selector: 'app-information',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './information.html',
   styleUrl: './information.scss',
 })
@@ -23,59 +24,53 @@ export class Information {
   @Output() componentSelected = new EventEmitter<string>();
   protected readonly components = ['about', 'experience', 'stack', 'aptitudes', 'contact'];
   selectedSection = 'about';
-  selectedOption = 'intro';
+  selectedOption = 'desc';
 
   sections: InfoSection[] = [
     {
       id: 'about',
-      label: 'Sobre mí',
+      label: 'information.sections.about.label',
       options: [
         {
           id: 'desc',
-          label: 'Descripción',
-          detail:
-            'Desarrollador de software entusiasta con dos años de experiencia usando tecnologías modernas de frontend y backend. Me apasiona crear aplicaciones web eficientes y escalables, y siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.',
+          label: 'information.sections.about.options.description.label',
+          detail: 'information.sections.about.options.description.detail',
         },
         {
           id: 'mission',
-          label: 'Misión',
-          detail:
-            'Aprender cosas nuevas constantemente tanto profesional cómo personalmente, para ser una mejor versión de mí mismo y poder ayudar a otros a crecer.',
+          label: 'information.sections.about.options.mission.label',
+          detail: 'information.sections.about.options.mission.detail',
         },
         {
           id: 'intereses',
-          label: 'Intereses',
-          detail:
-            'Soy un apasionado de la tecnología y la programación, me gusta aprender nuevas tecnologías y aplicarlas en proyectos personales. También disfruto de los videojuegos, el deporte y de muchas cosas más, siempre estoy buscando nuevas experiencias y formas de crecer como persona.',
+          label: 'information.sections.about.options.interests.label',
+          detail: 'information.sections.about.options.interests.detail',
         },
       ],
     },
     {
       id: 'experience',
-      label: 'Experiencia',
+      label: 'information.sections.experience.label',
       options: [
         {
           id: 'ecosur',
-          label: 'Ecosur',
-          detail:
-            'Trabajé cómo desarrollador becario principalmente enfocado en el backend trabajando con las tecnologías de .NET desarrollando APIs para automatizar procesos educativos. Además, utilicé react para graficar datos institucionales.',
+          label: 'information.sections.experience.options.ecosur.label',
+          detail: 'information.sections.experience.options.ecosur.detail',
         },
         {
           id: 'alset',
-          label: 'Alset',
-          detail:
-            'Me desempeñé cómo un desarrollador full-stack desarrollando y haciendo mantenimiento de aplicaciones web utilizando .NET y NestJS para el backend y angular para frontend.',
+          label: 'information.sections.experience.options.alset.label',
+          detail: 'information.sections.experience.options.alset.detail',
         },
         {
           id: 'legalbit',
-          label: 'Legalbit',
-          detail: 'Tuve un puesto cómo desarrollador backend utilizando tecnologías de node.js',
+          label: 'information.sections.experience.options.legalbit.label',
+          detail: 'information.sections.experience.options.legalbit.detail',
         },
         {
           id: 'cajapixeles',
-          label: 'Caja de Pixeles',
-          detail:
-            'Apoyé en el desarrollo y migración de un sistema de gestión empresarial haciendo uso de Angular para la implementación de interfaces y conectarlas con la API.',
+          label: 'information.sections.experience.options.cajapixeles.label',
+          detail: 'information.sections.experience.options.cajapixeles.detail',
         },
         // {
         //   id: 'personal',
@@ -86,51 +81,54 @@ export class Information {
     },
     {
       id: 'stack',
-      label: 'Stack',
+      label: 'information.sections.stack.label',
       options: [
-        { id: 'frontend', label: 'Frontend', detail: 'Angular, React...' },
-        { id: 'backend', label: 'Backend', detail: 'Node.js, Express...' },
+        {
+          id: 'frontend',
+          label: 'information.sections.stack.options.frontend.label',
+          detail: 'information.sections.stack.options.frontend.detail',
+        },
+        {
+          id: 'backend',
+          label: 'information.sections.stack.options.backend.label',
+          detail: 'information.sections.stack.options.backend.detail',
+        },
       ],
     },
     {
       id: 'aptitudes',
-      label: 'Aptitudes',
+      label: 'information.sections.skills.label',
       options: [
         {
           id: 'communication',
-          label: 'Comunicación',
-          detail:
-            'Disfruto de tener una comunicación clara y eficiente con los clientes y compañeros de trabajo.',
+          label: 'information.sections.skills.options.communication.label',
+          detail: 'information.sections.skills.options.communication.detail',
         },
         {
           id: 'problemSolving',
-          label: 'Resolución de problemas',
-          detail:
-            'Me gusta enfrentar desafíos y encontrar soluciones a los problemas que surgen en el desarrollo de software.',
+          label: 'information.sections.skills.options.problemSolving.label',
+          detail: 'information.sections.skills.options.problemSolving.detail',
         },
         {
           id: 'teamwork',
-          label: 'Trabajo en equipo',
-          detail:
-            'Disfruto de estar en un equipo en el que se fomente la colaboración y el respeto mutuo para disfrutar aún más del desarrollo de sistemas y tener un ambiente de trabajo positivo.',
+          label: 'information.sections.skills.options.teamwork.label',
+          detail: 'information.sections.skills.options.teamwork.detail',
         },
       ],
     },
     {
       id: 'contact',
-      label: 'Contacto',
+      label: 'information.sections.contact.label',
       options: [
         {
           id: 'email',
-          label: 'Email',
-          detail:
-            'jesus.kramsky@gmail.com\nSi tienes alguna pregunta o proyecto con el que te gustaría colaborar, no dudes en contactarme por medio de mi correo.',
+          label: 'information.sections.contact.options.email.label',
+          detail: 'information.sections.contact.options.email.detail',
         },
         {
           id: 'linkedin',
-          label: 'LinkedIn',
-          detail:
-            'https://www.linkedin.com/in/jesus-kramsky-27b541317/\nPuedes ver y seguir mi perfil en Linkedin para conocer más sobre mi experiencia y habilidades por medio de mis publicaciones.',
+          label: 'information.sections.contact.options.linkedin.label',
+          detail: 'information.sections.contact.options.linkedin.detail',
         },
       ],
     },
@@ -187,7 +185,7 @@ export class Information {
   currentDetail() {
     return (
       this.currentOptions().find((option) => option.id === this.selectedOption)?.detail ??
-      'Selecciona una opción'
+      'information.selectOption'
     );
   }
 }

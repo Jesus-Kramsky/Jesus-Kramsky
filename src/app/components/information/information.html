@@ -1,7 +1,13 @@
 <div class="flex flex-col p-4 menu">
   <div class="flex flex-row border border-gray-300 overflow-hidden bg-[#112651]">
     <div class="flex flex-1 items-center justify-center border-r border-gray-300 p-4">
-      <img class="block" src="{{ pixelArt }}" width="200" height="200" alt="Antonio Kramsky" />
+      <img
+        class="block"
+        [src]="pixelArt"
+        width="200"
+        height="200"
+        [alt]="'information.portraitAlt' | translate"
+      />
     </div>
     <div class="flex flex-row flex-4 p-4">
       <div class="flex-1">
@@ -12,7 +18,7 @@
               [class.font-bold]="selectedSection === section.id"
               (click)="selectSection(section.id)"
             >
-              {{ section.label }}
+              {{ section.label | translate }}
             </li>
           }
         </ul>
@@ -25,10 +31,12 @@
               [class.font-bold]="selectedSection === section.id"
               (click)="selectSection(section.id)"
             >
-              {{ section.label }}
+              {{ section.label | translate }}
             </li>
           }
-          <li (click)="selectComponent('home')" class="cursor-pointer">Volver al menú</li>
+          <li (click)="selectComponent('home')" class="cursor-pointer">
+            {{ 'information.backToMenu' | translate }}
+          </li>
         </ul>
       </div>
     </div>
@@ -43,11 +51,11 @@
             [class.font-bold]="selectedOption === option.id"
             (click)="selectOption(option.id)"
           >
-            {{ option.label }}
+            {{ option.label | translate }}
           </li>
         }
       </ul>
     </div>
-    <div class="flex-4 p-4 whitespace-pre-line">{{ currentDetail() }}</div>
+    <div class="flex-4 p-4 whitespace-pre-line">{{ currentDetail() | translate }}</div>
   </div>
 </div>

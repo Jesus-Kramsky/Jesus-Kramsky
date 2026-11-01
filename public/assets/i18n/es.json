@@ -1,0 +1,89 @@
+{
+  "home": {
+    "information": "Información",
+    "languageToggle": "English",
+    "imageAlt": "Personaje de pixel art"
+  },
+  "information": {
+    "portraitAlt": "Antonio Kramsky",
+    "backToMenu": "Volver al menú",
+    "selectOption": "Selecciona una opción",
+    "sections": {
+      "about": {
+        "label": "Sobre mí",
+        "options": {
+          "description": {
+            "label": "Descripción",
+            "detail": "Desarrollador de software entusiasta con dos años de experiencia usando tecnologías modernas de frontend y backend. Me apasiona crear aplicaciones web eficientes y escalables, y siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades."
+          },
+          "mission": {
+            "label": "Misión",
+            "detail": "Aprender cosas nuevas constantemente tanto profesional como personalmente, para ser una mejor versión de mí mismo y poder ayudar a otros a crecer."
+          },
+          "interests": {
+            "label": "Intereses",
+            "detail": "Soy un apasionado de la tecnología y la programación. Me gusta aprender nuevas tecnologías y aplicarlas en proyectos personales. También disfruto de los videojuegos, el deporte y muchas otras cosas. Siempre estoy buscando nuevas experiencias y formas de crecer como persona."
+          }
+        }
+      },
+      "experience": {
+        "label": "Experiencia",
+        "options": {
+          "ecosur": {
+            "label": "Ecosur",
+            "detail": "Trabajé como desarrollador becario, principalmente enfocado en el backend. Usé .NET para desarrollar APIs que automatizaban procesos educativos y React para graficar datos institucionales."
+          },
+          "alset": {
+            "label": "Alset",
+            "detail": "Me desempeñé como desarrollador full-stack, creando y dando mantenimiento a aplicaciones web con .NET y NestJS para el backend y Angular para el frontend."
+          },
+          "legalbit": {
+            "label": "Legalbit",
+            "detail": "Trabajé como desarrollador backend utilizando tecnologías de Node.js."
+          },
+          "cajapixeles": {
+            "label": "Caja de Pixeles",
+            "detail": "Apoyé en el desarrollo y la migración de un sistema de gestión empresarial, usando Angular para implementar interfaces y conectarlas con la API."
+          }
+        }
+      },
+      "stack": {
+        "label": "Stack",
+        "options": {
+          "frontend": { "label": "Frontend", "detail": "Angular, React..." },
+          "backend": { "label": "Backend", "detail": "Node.js, Express..." }
+        }
+      },
+      "skills": {
+        "label": "Aptitudes",
+        "options": {
+          "communication": {
+            "label": "Comunicación",
+            "detail": "Disfruto de mantener una comunicación clara y eficiente con clientes y compañeros de trabajo."
+          },
+          "problemSolving": {
+            "label": "Resolución de problemas",
+            "detail": "Me gusta enfrentar desafíos y encontrar soluciones a los problemas que surgen durante el desarrollo de software."
+          },
+          "teamwork": {
+            "label": "Trabajo en equipo",
+            "detail": "Disfruto formar parte de un equipo que fomenta la colaboración y el respeto mutuo. Esto hace más gratificante desarrollar sistemas y contribuye a un ambiente de trabajo positivo."
+          }
+        }
+      },
+      "contact": {
+        "label": "Contacto",
+        "options": {
+          "email": {
+            "label": "Email",
+            "detail": "jesus.kramsky@gmail.com\nSi tienes alguna pregunta o proyecto en el que te gustaría colaborar, no dudes en escribirme."
+          },
+          "linkedin": {
+            "label": "LinkedIn",
+            "detail": "https://www.linkedin.com/in/jesus-kramsky-27b541317/\nVisita y sigue mi perfil de LinkedIn para conocer más sobre mi experiencia y habilidades a través de mis publicaciones."
+          }
+        }
+      }
+    }
+  }
+}
