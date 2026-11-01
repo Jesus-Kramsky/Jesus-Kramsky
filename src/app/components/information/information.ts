@@ -20,7 +20,7 @@ type InfoSection = {
   styleUrl: './information.scss',
 })
 export class Information {
-  protected readonly pixelArt = '/assets/borderless.jpg';
+  protected readonly pixelArt = 'assets/borderless.jpg';
   @Output() componentSelected = new EventEmitter<string>();
   protected readonly components = ['about', 'experience', 'stack', 'aptitudes', 'contact'];
   selectedSection = 'about';
