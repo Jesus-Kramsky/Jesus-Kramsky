@@ -10,7 +10,7 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
   styleUrl: './home.scss',
 })
 export class Home {
-  protected readonly pixelArt = '/assets/New_Piskel.gif';
+  protected readonly pixelArt = 'assets/New_Piskel.gif';
 
   constructor(private readonly translate: TranslateService) {}
 
