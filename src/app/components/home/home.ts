@@ -20,6 +20,18 @@ export class Home {
     this.componentSelected.emit(component);
   }
 
+  downloadResume() {
+    const language = this.translate.currentLang();
+    const resumeUrl =
+      language === 'es'
+        ? 'assets/files/Curriculum_Antonio_Kramsky.pdf'
+        : 'assets/files/Antonio_Kramsky_Resume.pdf';
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = `resume_${language}.pdf`;
+    link.click();
+  }
+
   toggleLanguage() {
     const language = this.translate.currentLang() === 'es' ? 'en' : 'es';
     this.translate.use(language).subscribe(() => localStorage.setItem('language', language));

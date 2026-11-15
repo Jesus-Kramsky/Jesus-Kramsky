@@ -2,7 +2,8 @@
   "home": {
     "information": "Information",
     "languageToggle": "Español",
-    "imageAlt": "Pixel art character"
+    "imageAlt": "Pixel art character",
+    "resume": "Download Resume"
   },
   "information": {
     "portraitAlt": "Antonio Kramsky",

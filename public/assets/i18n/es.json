@@ -2,7 +2,8 @@
   "home": {
     "information": "Información",
     "languageToggle": "English",
-    "imageAlt": "Personaje de pixel art"
+    "imageAlt": "Personaje de pixel art",
+    "resume": "Descargar CV"
   },
   "information": {
     "portraitAlt": "Antonio Kramsky",
